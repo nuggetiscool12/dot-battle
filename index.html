@@ -1,6 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Dot Battle</title>
+    <title>Dot Battle</title>
 </head>
 <body>
+
+    <h1>DOT BATTLE</h1>
+
+    <p id="player1">Player 1: 0</p>
+    <p>Player 2: 0</p>
+
+    <button onclick="addPoint1()">CLICK ME</button>
+
+    <script>
+        let score1 = 0;
+        let score2 = 0;
+
+        function addPoint1() {
+            score1++;
+            document.getElementById("player1").innerText = "Player 1: " + score1;
+        }
+    </script>
+
+</body>
+</html>
+
